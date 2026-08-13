@@ -484,9 +484,12 @@ class DestinationCard extends StatelessWidget {
 > 3. เขียน Comment สั้น ๆ ในโค้ดของตัวเองอธิบายว่าทำไมต้องใช้ `Positioned` คู่กับ `Stack` ถึงจะย้ายตำแหน่ง Badge ได้ (ถ้าใช้ `Positioned` นอก `Stack` จะเกิดอะไรขึ้น)
 
 บันทึกรูปผลการทดลอง
-```image
-บันทึกรูปโค้ด และรูปผลการทดลองที่นี่ (กรณีที่ยังไม่สามารถรันได้ ให้ทดลองจนถึงขั้นตอนที่สามารถ capture รูปได้และบันทึกรูปไว้ในส่วนนี้)
-```
+
+<img width="853" height="413" alt="image" src="https://github.com/user-attachments/assets/f5eed951-09a9-4973-8c1f-83bffcd429e6" />
+<img width="741" height="321" alt="image" src="https://github.com/user-attachments/assets/e6f1ba24-a3b3-47a5-9a35-4d40ee3a4261" />
+
+
+
 ---
 
 ### การทดลองที่ 4 — สร้าง Screens
@@ -640,9 +643,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
 > 3. สังเกตว่าค่าทั้งสองตัวเท่ากันหรือไม่ แล้วเขียนสรุป 2-3 บรรทัดเป็น Comment ในโค้ดว่า `MediaQuery.of(context).size.width` (ความกว้างของทั้งหน้าจอ) กับ `LayoutBuilder` `constraints.maxWidth` (ความกว้างที่ Widget นั้น ๆ ได้รับจาก Parent) ต่างกันอย่างไร และควรเลือกใช้ตัวไหนเมื่อไหร่
 
 บันทึกรูปผลการทดลอง
-```image
-บันทึกรูปโค้ด และรูปผลการทดลองที่นี่ (กรณีที่ยังไม่สามารถรันได้ ให้ทดลองจนถึงขั้นตอนที่สามารถ capture รูปได้และบันทึกรูปไว้ในส่วนนี้)
-```
+<img width="798" height="427" alt="image" src="https://github.com/user-attachments/assets/3323753d-379c-49f4-99d3-950d74448f80" />
+<img width="591" height="338" alt="image" src="https://github.com/user-attachments/assets/f98adcd8-458d-411a-aa2a-6554f7fa409c" />
+<img width="776" height="298" alt="image" src="https://github.com/user-attachments/assets/05e8d6c3-e354-4437-8af2-ea7766ef4cc3" />
+
 
 #### ขั้นตอนที่ 4.2 — Destination Detail Screen
 
