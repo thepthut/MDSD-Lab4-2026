@@ -1,4 +1,4 @@
-# 📱 ใบงานการทดลองที่ 4
+<img width="1045" height="796" alt="image" src="https://github.com/user-attachments/assets/909b2d39-a3ec-494e-9464-b8d00f5e754a" /># 📱 ใบงานการทดลองที่ 4
 # Flutter Layout & Navigation — Multi-Screen Travel App
 
 > **รายวิชา:** การพัฒนาซอฟต์แวร์สำหรับอุปกรณ์เคลื่อนที่  
@@ -487,6 +487,7 @@ class DestinationCard extends StatelessWidget {
 
 <img width="853" height="413" alt="image" src="https://github.com/user-attachments/assets/f5eed951-09a9-4973-8c1f-83bffcd429e6" />
 <img width="741" height="321" alt="image" src="https://github.com/user-attachments/assets/e6f1ba24-a3b3-47a5-9a35-4d40ee3a4261" />
+<img width="1052" height="690" alt="image" src="https://github.com/user-attachments/assets/ee8e1dc9-2c43-4844-8910-3015079702ab" />
 
 
 
@@ -646,6 +647,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
 <img width="798" height="427" alt="image" src="https://github.com/user-attachments/assets/3323753d-379c-49f4-99d3-950d74448f80" />
 <img width="591" height="338" alt="image" src="https://github.com/user-attachments/assets/f98adcd8-458d-411a-aa2a-6554f7fa409c" />
 <img width="776" height="298" alt="image" src="https://github.com/user-attachments/assets/05e8d6c3-e354-4437-8af2-ea7766ef4cc3" />
+<img width="1052" height="690" alt="image" src="https://github.com/user-attachments/assets/b16b526d-7631-4279-9f9d-040124bf82b3" />
+
 
 
 #### ขั้นตอนที่ 4.2 — Destination Detail Screen
@@ -1107,9 +1110,12 @@ class _StatCard extends StatelessWidget {
 > 3. เขียน Comment อธิบายว่าทำไมต้องใส่ `shrinkWrap: true` และ `NeverScrollableScrollPhysics()` เมื่อวาง `ListView` ซ้อนอยู่ใน `Column` ที่อยู่ใน `SingleChildScrollView` อีกที (จะเกิดอะไรขึ้นถ้าไม่ใส่)
 
 บันทึกรูปผลการทดลอง
-```image
-บันทึกรูปโค้ด และรูปผลการทดลองที่นี่ (กรณีที่ยังไม่สามารถรันได้ ให้ทดลองจนถึงขั้นตอนที่สามารถ capture รูปได้และบันทึกรูปไว้ในส่วนนี้)
-```
+<img width="780" height="447" alt="image" src="https://github.com/user-attachments/assets/1e3e5f6a-66a0-4a33-aa01-a3524926d371" />
+<img width="848" height="392" alt="image" src="https://github.com/user-attachments/assets/f58c62e6-4ed6-472d-932c-b10b2cb3477d" />
+<img width="1036" height="716" alt="image" src="https://github.com/user-attachments/assets/7e80dfef-14b0-4125-8222-a0e0aa18efd3" />
+<img width="1037" height="711" alt="image" src="https://github.com/user-attachments/assets/798adcc4-d74f-460e-8e5f-e11a1137e94c" />
+
+
 
 สร้างไฟล์ `lib/screens/saved_screen.dart`:
 
@@ -1360,9 +1366,13 @@ final GoRouter appRouter = GoRouter(
 > 3. ทดสอบ Fallback ที่แก้ไข โดยรันแอปบน Chrome (`flutter run -d chrome`) แล้วพิมพ์ URL `/explore/destinations/999` ตรง ๆ ใน Address Bar (เป็น `id` ที่ไม่มีอยู่จริง) — ต้องเห็นหน้า "ไม่พบข้อมูลที่ต้องการ" ไม่ใช่ Error สีแดงหรือข้อมูลผิดตัว
 
 บันทึกรูปผลการทดลอง
-```image
-บันทึกรูปโค้ด และรูปผลการทดลองที่นี่ (กรณีที่ยังไม่สามารถรันได้ ให้ทดลองจนถึงขั้นตอนที่สามารถ capture รูปได้และบันทึกรูปไว้ในส่วนนี้)
-```
+<img width="827" height="326" alt="image" src="https://github.com/user-attachments/assets/a136c797-cfdf-487d-bea8-40eb065e235b" />
+<img width="762" height="437" alt="image" src="https://github.com/user-attachments/assets/9d880227-ae0f-4208-bd52-92ca79ec3cf9" />
+<img width="1167" height="503" alt="image" src="https://github.com/user-attachments/assets/b78e1d48-e40a-477f-89af-837acfce7419" />
+<img width="1036" height="791" alt="image" src="https://github.com/user-attachments/assets/21d99031-6be0-4980-87ab-31d65a130f86" />
+<img width="1040" height="788" alt="image" src="https://github.com/user-attachments/assets/a974720e-53fd-4a13-98f1-c195011f3ca1" />
+
+
 
 
 #### ขั้นตอนที่ 5.2 — ตั้งค่า main.dart
@@ -1443,21 +1453,21 @@ flutter devices
 
 | # | สิ่งที่ทดสอบ | ผลที่คาดหวัง | ผลจริง |
 |---|---|---|---|
-| 1 | เปิดแอป | เห็น Home Screen + Bottom Navigation Bar | |
-| 2 | กด Tab "สำรวจ" | เปลี่ยนไป Explore Screen แสดง Grid | |
-| 3 | พิมพ์ค้นหา "โตเกียว" | ผลการค้นหาเหลือเฉพาะโตเกียว | |
-| 4 | กดที่ Card ใด ๆ | เปิด Detail Screen พร้อมข้อมูลถูกต้อง | |
-| 5 | กด Back บน Detail | กลับมา Explore Screen | |
-| 6 | กด Tab "หน้าหลัก" | กลับหน้าหลัก โดยที่ Stack ใน Explore ยังไม่หาย | |
-| 7 | กดหัวใจบน Detail | Snackbar แจ้งบันทึกสำเร็จ | |
-| 8 | กด "จองเลย" บน Detail | Dialog แสดงการจองสำเร็จ | |
-| 9 | กด "กลับหน้าหลัก" ใน Dialog | Navigate กลับ Home | |
-| 10 | ปรับความกว้างหน้าจอ (ดูวิธีตาม Device ด้านล่าง) | Grid ปรับ Column Count ตาม M3 Breakpoint | |
-| 11 | Refresh หน้า Detail บน Chrome (กด `F5` ขณะอยู่ที่หน้ารายละเอียด) | ข้อมูล Destination ยังแสดงถูกต้อง ไม่ใช่ null/Error (Fallback ทำงาน) | |
-| 12 | เลื่อนดู Featured List แนวนอนบนหน้า Home (หลังทำ Checkpoint 4.3) | เห็นครบทุก Destination เลื่อนซ้าย-ขวาได้ลื่นไหล | |
-| 13 | พิมพ์ URL `/explore/destinations/999` ตรง ๆ (หลังทำ Checkpoint 5.1) | แสดงหน้า "ไม่พบข้อมูลที่ต้องการ" ไม่ใช่ Error สีแดง | |
-| 14 | กด Tab "เกี่ยวกับ" ที่เพิ่มใหม่ (หลังทำ Checkpoint 5.1) | เปลี่ยนไปหน้า AboutScreen ได้ | |
-| 15 | เทียบค่า `MediaQuery.size.width` กับ `constraints.maxWidth` (ตาม Checkpoint 4.1) | บันทึกค่าที่สังเกตได้และสรุปความแตกต่าง | |
+| 1 | เปิดแอป | เห็น Home Screen + Bottom Navigation Bar |✅|
+| 2 | กด Tab "สำรวจ" | เปลี่ยนไป Explore Screen แสดง Grid |✅|
+| 3 | พิมพ์ค้นหา "โตเกียว" | ผลการค้นหาเหลือเฉพาะโตเกียว |✅|
+| 4 | กดที่ Card ใด ๆ | เปิด Detail Screen พร้อมข้อมูลถูกต้อง |✅|
+| 5 | กด Back บน Detail | กลับมา Explore Screen |✅|
+| 6 | กด Tab "หน้าหลัก" | กลับหน้าหลัก โดยที่ Stack ใน Explore ยังไม่หาย |✅|
+| 7 | กดหัวใจบน Detail | Snackbar แจ้งบันทึกสำเร็จ |✅|
+| 8 | กด "จองเลย" บน Detail | Dialog แสดงการจองสำเร็จ |✅|
+| 9 | กด "กลับหน้าหลัก" ใน Dialog | Navigate กลับ Home |✅|
+| 10 | ปรับความกว้างหน้าจอ (ดูวิธีตาม Device ด้านล่าง) | Grid ปรับ Column Count ตาม M3 Breakpoint |✅|
+| 11 | Refresh หน้า Detail บน Chrome (กด `F5` ขณะอยู่ที่หน้ารายละเอียด) | ข้อมูล Destination ยังแสดงถูกต้อง ไม่ใช่ null/Error (Fallback ทำงาน) |✅|
+| 12 | เลื่อนดู Featured List แนวนอนบนหน้า Home (หลังทำ Checkpoint 4.3) | เห็นครบทุก Destination เลื่อนซ้าย-ขวาได้ลื่นไหล |✅|
+| 13 | พิมพ์ URL `/explore/destinations/999` ตรง ๆ (หลังทำ Checkpoint 5.1) | แสดงหน้า "ไม่พบข้อมูลที่ต้องการ" ไม่ใช่ Error สีแดง |✅|
+| 14 | กด Tab "เกี่ยวกับ" ที่เพิ่มใหม่ (หลังทำ Checkpoint 5.1) | เปลี่ยนไปหน้า AboutScreen ได้ |✅|
+| 15 | เทียบค่า `MediaQuery.size.width` กับ `constraints.maxWidth` (ตาม Checkpoint 4.1) | บันทึกค่าที่สังเกตได้และสรุปความแตกต่าง |✅|
 
 ---
 
